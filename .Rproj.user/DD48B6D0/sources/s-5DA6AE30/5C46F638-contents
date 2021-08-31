@@ -1,6 +1,11 @@
 # Load the dplyr package
 library(dplyr)
 
+# Read the database
+
+votes <- readRDS("Data/votes.rds")
+
+
 # Print the votes dataset
 votes
 
