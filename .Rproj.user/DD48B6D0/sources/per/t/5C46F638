@@ -3,23 +3,23 @@
     "path": "C:/Proyectos/R/CaseStudyExploratory/Caso.R",
     "project_path": "Caso.R",
     "type": "r_source",
-    "hash": "0",
+    "hash": "1207816148",
     "contents": "",
-    "dirty": true,
+    "dirty": false,
     "created": 1630382829373.0,
     "source_on_save": false,
     "relative_order": 1,
     "properties": {
         "tempName": "Untitled1",
-        "cursorPosition": "14,0",
-        "scrollLine": "0"
+        "cursorPosition": "39,0",
+        "scrollLine": "19"
     },
     "folds": "",
-    "lastKnownWriteTime": 1630383373,
+    "lastKnownWriteTime": 1630384881,
     "encoding": "UTF-8",
     "collab_server": "",
     "source_window": "",
-    "last_content_update": 1630383403718,
+    "last_content_update": 1630384881572,
     "read_only": false,
     "read_only_alternatives": []
 }
