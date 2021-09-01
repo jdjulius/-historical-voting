@@ -38,11 +38,41 @@ votes_processed <- votes_processed %>%
   mutate(country = "Indiana")
   
 
+# Print votes_processed
+votes_processed
+
+# Find total and fraction of "yes" votes
+votes_processed %>%
+  summarise(
+    total = n(),
+    percent_yes = mean(vote == 1) )
+  
+# Change this code to summarize by year
+votes_processed %>%
+  group_by(year)%>%
+  summarize(total = n(),
+            percent_yes = mean(vote == 1))
+  
+# Summarize by country: by_country
+by_country <- votes_processed %>%
+  group_by(country) %>%
+  summarize(total = n(),
+            percent_yes = mean(vote == 1))
   
   
-  
-  
-  
-  
-  
+# Print the by_country dataset
+by_country
+
+# Sort in ascending order of percent_yes
+by_country %>% 
+  arrange(percent_yes)
+
+# Now sort in descending order
+by_country %>% 
+  arrange(desc(percent_yes))
+
+# Filter out countries with fewer than 100 votes
+by_country %>%
+  arrange(percent_yes) %>%
+  filter(total > 100)
 
